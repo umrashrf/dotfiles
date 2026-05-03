@@ -13,9 +13,9 @@ git_init() {
     else
       git init
     fi
-    if git config --get "remote.origin.url" > /dev/null; then
+    if git config --get "remote.mypassport.url" > /dev/null; then
     else
-      git remote add origin "$git_origin"
+      git remote add mypassport "$git_origin"
     fi
   fi
 }
